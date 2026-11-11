@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <title>Exercise 8: Responsive Web Design</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
       font-family: "Pacifico", cursive;
       font-size: 30px;
       background-color: aqua;
       }
-
+      
+      @media screen and (max-width: 600px) {
+        
+        img, p {
+          width: 100%;
+          font-size: 0.75em;
+          
+        }
+         
+        body {
+          background-color: yellow;
+        }
+        
+      }
+          @media screen and (min-width: 768px) {
+            img { 
+              width: 800px;
+            }
+            p {
+              width: 600px;
+            }
+          }
       /* Responsive Design Additions */
 
       /*your CSS will go here*/
@@ -68,11 +89,7 @@
       margin-bottom: 0;
       }
       
-           @meta (max-width: 599px) {
-        body {
-          background color: yellow;
-        }
-      }
+           
       
     </style>
   </head>
